@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixabay API Practice Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Pixabay API Practice Lab</h1>
+            <p>Search photos and videos using the Pixabay REST API</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>Search Pixabay</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter a search term..."
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- Challenge Section -->
+        <section class="challenge-section">
+
+            <h2>Practice Challenges</h2>
+
+            <p>
+                Click a challenge to automatically perform the required search.
+            </p>
+
+            <div class="challenge-buttons">
+
+                <button class="challenge-btn" data-query="rocket launch">
+                    🚀 Rocket Launch
+                </button>
+
+                <button class="challenge-btn" data-query="basketball">
+                    🏀 Basketball
+                </button>
+
+                <button class="challenge-btn" data-query="forest">
+                    🌲 Forest
+                </button>
+
+                <button class="challenge-btn" data-query="road forest">
+                    🛣️ Road Forest
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Request Information -->
+        <section class="request-section">
+
+            <h2>API Request</h2>
+
+            <pre id="requestInfo">No request yet.</pre>
+
+        </section>
+
+
+        <!-- Status -->
+        <div id="loading" class="loading hidden">
+            Loading results...
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+
+        <!-- Results -->
+        <section class="results-section">
+
+            <div class="results-header">
+                <h2>Results</h2>
+
+                <span id="resultCount">
+                    0 results
+                </span>
+            </div>
+
+            <div id="results" class="results-grid"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Pixabay API Practice Lab
+        </p>
+
+        <p>
+            Created by Denz Macasero
+        </p>
+
+    </footer>
+
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

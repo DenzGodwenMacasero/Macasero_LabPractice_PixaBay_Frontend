@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #ddd;
+}
+
+
+/* SEARCH */
+
+.search-section {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+#searchButton {
+    padding: 14px 25px;
+    background: #333;
+    color: white;
+}
+
+#searchButton:hover {
+    background: #111;
+}
+
+
+/* CHALLENGES */
+
+.challenge-section {
+    margin-top: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.challenge-section h2 {
+    margin-bottom: 8px;
+}
+
+.challenge-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.challenge-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.challenge-btn {
+    padding: 12px 18px;
+    background: #e9ecef;
+    color: #222;
+}
+
+.challenge-btn:hover {
+    background: #d6d9dc;
+}
+
+
+/* REQUEST */
+
+.request-section {
+    margin-top: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.request-section h2 {
+    margin-bottom: 15px;
+}
+
+pre {
+    background: #1e1e1e;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+/* LOADING */
+
+.loading {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ERROR */
+
+.error {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8d7da;
+    color: #842029;
+    border-radius: 8px;
+}
+
+
+/* RESULTS */
+
+.results-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#resultCount {
+    color: #666;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+/* RESULT CARD */
+
+.result-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+}
+
+.result-media {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.result-content {
+    padding: 18px;
+}
+
+.result-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.result-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.result-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.result-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 25px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    #searchButton {
+        width: 100%;
+    }
+
+    .challenge-buttons {
+        flex-direction: column;
+    }
+
+    .challenge-btn {
+        width: 100%;
+    }
+
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
