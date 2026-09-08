@@ -34,6 +34,5 @@ The project uses:
 
 The API key is stored in `config.js`.
 
-```javascript
 const PIXABAY_API_KEY = "YOUR_PIXABAY_API_KEY";
-```
+
