@@ -7,7 +7,6 @@ const resultCount = document.getElementById("resultCount");
 const loading = document.getElementById("loading");
 const errorMessage = document.getElementById("error");
 
-const requestInfo = document.getElementById("requestInfo");
 
 
 // Pixabay API settings
@@ -95,9 +94,6 @@ async function searchPixabay(query) {
         const requestURL =
             `${API_URL}?${parameters.toString()}`;
 
-
-        // Show exact API request
-        requestInfo.textContent = requestURL;
 
 
         console.log("Pixabay API Request:");
