@@ -1,62 +1,39 @@
 # Pixabay API Practice Lab
 
-## Overview
+Denz Godwen D. Macasero
 
-This project demonstrates how to work with a real REST API using JavaScript and the Pixabay API.
+A simple JavaScript project that uses the **Pixabay API** to search and display images.
 
-The application allows users to search Pixabay and display image results returned from the API.
+## Technologies
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- Pixabay REST API
-- Fetch API
+* HTML
+* CSS
+* JavaScript
+* Pixabay API
+* Fetch API
 
 ## Features
 
-- Pixabay image search
-- Search using keywords
-- Four practice challenges
-- Displays API request information
-- Displays returned Pixabay results
-- Loading state
-- Error handling
-- Responsive design
-- Links to original Pixabay pages
+* Search Pixabay images
+* Display search results
+* Loading and error messages
+* Responsive design
 
 ## Practice Challenges
-
-The application includes the following required searches:
 
 1. Rocket Launch
 2. Basketball
 3. Forest
 4. Road Forest
 
-## API Request
+## API
 
-The application sends requests to:
+The project uses:
 
-https://pixabay.com/api/
+`https://pixabay.com/api/`
 
-The main parameters used include:
-
-- `key`
-- `q`
-- `image_type`
-- `orientation`
-- `safesearch`
-- `per_page`
-
-## API Key Setup
-
-The real Pixabay API key is stored in:
-
-`config.js`
-
-Example:
+The API key is stored in `config.js`.
 
 ```javascript
 const PIXABAY_API_KEY = "YOUR_PIXABAY_API_KEY";
+```
